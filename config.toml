@@ -1,0 +1,52 @@
+# Title of your site
+title = "CHIRAL Education"
+
+# The URL of your site.
+# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
+baseurl = "https://education.chiral.org/"
+
+# Name the theme folder in `themes/`.
+theme = "hugo-graphite"
+
+# Enable analytics by entering your Google Analytics tracking ID
+googleAnalytics = "UA-20375833-3"
+
+relativeurls = false
+languageCode = "en-us"
+description = "CHIRAL Education helps people achieve data literacy using the R programming language."
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+# below is critical for non-authors to show up in article listing
+preserveTaxonomyNames = true
+# uncomment the next line to disable listing authors
+# disableKinds = ["taxonomyTerm"]
+enableEmoji = true
+
+[permalinks]
+  blog = "blog/:year/:month/:slug/"
+
+[taxonomies]
+  author = "author"
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.tableOfContents]
+    endLevel = 2
+    ordered = false
+    startLevel = 2
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    style = "pygments"
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.twitter]
+    enableDNT = true
+    privacyEnhanced = true
+
