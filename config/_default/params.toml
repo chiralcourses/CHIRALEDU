@@ -1,0 +1,84 @@
+# Description for social sharing and search engines.
+description = "CHIRAL Education helps people achieve data literacy using the R language, tools, and content."
+
+# Default image for social sharing and search engines. Place image in `static/images/` folder and specify image name here.
+sharing_image = "01-share.jpg"
+twitter_image = "02-share.jpg"
+
+# Link custom CSS assets
+#   (relative to /static/css)
+custom_css = ["edu.css", "edu-fonts.css"]
+
+# Can include more than one content folder as a main section
+mainSections = ["blog"]
+
+# options for highlight.js (version, additional languages, and theme)
+highlightjsVersion = "9.11.0"
+highlightjsCDN = "//cdn.bootcss.com"
+highlightjsLang = ["r", "yaml"]
+highlightjsTheme = "github"
+
+MathJaxCDN = "//cdn.bootcss.com"
+MathJaxVersion = "2.7.1"
+
+# Logo file relative to static/images/
+# to appear in upper navbar
+[logo]
+    image = "Color/chiralbd.png"
+    width = 220.85
+    height = 40
+    alt = "CHIRAL Education"
+
+[footer]
+    github_url = "https://github.com/chiralcourses"
+    twitter_url = "https://twitter.com/chiralbd"
+    # Enter a copyright notice to display in the site footer.
+    # To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
+    copyright = "&copy; [CHIRAL Bangladesh](https://www.chiralbd.org/), {year}"
+    support = "" # leave empty to remove support statement + RStudio logo
+
+# leave blank in quotes for the default = true
+# to turn off, set = false (no quotes)
+[authors]
+    show_list = "" # on list page, default is true
+    show_single = "" # on single pages, default is true
+    show_latest = "" # on bio, default is true
+    label_latest = "" # on bio, default is "Latest"
+
+# leave blank in quotes for the default = true
+# to turn off, set = false (no quotes)
+[events]
+    link_archive = "" # default is true
+
+# customize your site colors
+# these colors get applied by layouts/partials/custom-site.css
+# then, the layouts/partials/head_includes.html uses that partial
+# the partial head_includes.html is called in the partial header.html everywhere!
+[colors]
+    text = "#404040"
+    # Links
+    link = "#447099" # rstudio dark blue
+    link_hover = "#4D8DC9" # rstudio blue
+    # Footer
+    footer_primary = "#75AADB" # same as tidyverse.org
+    footer_text = "#fff" # same as tidyverse.org
+    # Backgrounds
+    background = "white"
+    home_section_odd = "white"
+    home_section_even = "#f0eee9"
+    # Menu
+    menu_primary = "#fff"
+    menu_text = "#404040"
+    menu_text_active = "#4D8DC9" # rstudio blue
+    menu_text_current = "#447099" # rstudio dark blue
+    menu_decorate_current = "underline"
+    menu_title = "#fff"
+    menu_title_active = "#deef03"
+    menu_box_hover = "#fff"
+    menu_box_active = "#fff"
+    # Tables
+    header_background = "#dfe3eb"
+    table_row_even = "#f7faff"
+    table_row_odd = "#fff"
+    # Author taxo- latest border
+    latest_border = "#dae8f6"
