@@ -1,26 +1,25 @@
 # Title of your site
-title = "CHIRAL Education"
+title = "CHIRALEDU"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "https://education.chiral.org/"
+baseurl = "/"
 
 # Name the theme folder in `themes/`.
 theme = "hugo-graphite"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = "UA-20375833-3"
+googleAnalytics = ""
 
 relativeurls = false
 languageCode = "en-us"
-description = "CHIRAL Education helps people achieve data literacy using the R programming language."
+description = "An opinionated collection of R packages designed for data science."
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 # below is critical for non-authors to show up in article listing
 preserveTaxonomyNames = true
 # uncomment the next line to disable listing authors
 # disableKinds = ["taxonomyTerm"]
-enableEmoji = true
 
 [permalinks]
   blog = "blog/:year/:month/:slug/"
@@ -29,6 +28,14 @@ enableEmoji = true
   author = "author"
   category = "categories"
   tag = "tags"
+
+# Configure BlackFriday Markdown rendering.
+#   See: https://gohugo.io/getting-started/configuration/#configure-blackfriday
+[blackfriday]
+  hrefTargetBlank = true  # `true` opens external links in a new tab. See https://github.com/gohugoio/hugo/issues/2424
+	angledQuotes = false
+	latexDashes = true
+  extensions = ["backslashLineBreak"]
 
 [markup]
   defaultMarkdownHandler = "goldmark"
@@ -40,13 +47,3 @@ enableEmoji = true
     unsafe = true
   [markup.highlight]
     style = "pygments"
-
-[privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-    respectDoNotTrack = true
-    useSessionStorage = true
-  [privacy.twitter]
-    enableDNT = true
-    privacyEnhanced = true
-

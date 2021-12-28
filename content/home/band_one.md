@@ -1,9 +1,16 @@
 ---
-title: "Who We Are?"
-background-image: "images/flowers.png"
-background-color: "#f5f4f2"
+title: "Education @ CHIRAL Bangladesh"
+col0:
+  row1: "dplyr"
+  row2: "ggplot2"
+  row3: "readr"
+col1:
+  row2: "forcats"
+  row3: "stringr"
+col2:
+  row2: "tibble"
+  row3: "tidyr"
+  row4: "purrr"
 ---
 
-No one is born a data scientist. Every person who works with R today was once a complete beginner. No matter how much you know about the R ecosystem already, you'll always have more to learn.
-
-At RStudio, we know that everyone is at a different stage in learning the vast ecosystem of R, ranging from rank beginner to seasoned data scientists to professional educators. Choose a starting point below, or catch up with us on our [blog](/blog).
+The [CHIRAL Bangladesh](https://chiralbd.org/) runs different health data analytics, bioinformatics, and genomic data science programs. Health Research ToolBox: A Step by Step Guide for Beginners is one of them; in this program, the participants will learn how to handle an end-to-end research project, literature search, and manuscript writing.
